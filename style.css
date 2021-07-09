@@ -8,12 +8,14 @@ head {
 }
 body {
     background: #ffffff;
+}
+.section1 {
     background-image: url('./sunny-solution/Frontend-Mentor-Challenges-16/images/desktop/image-header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-}
-.section1 {
+    background-position: center center;
     display: flex;
+    height: 60vh;
     flex-direction: column;
 }
 .section1 .navigation {
@@ -53,9 +55,39 @@ body {
     transform: scale(70%) translateY(40px);
     transition: all 0.3s;
 }
-.arrowDown {
-    transform: translateY(80px)
+.section2 {
+    display: flex;
+    width: 100%;
 }
-.arrowUp {
-    transform: translateY(40px)
+.section2-left, .section2-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 35vh;
+}
+.section2-left .text{
+    width: 70%;
+}
+.section2-left .text p {
+    word-wrap: break-word;
+    font-size: 1rem;
+    margin: 15px 0;
+}
+.section2-left .text h2 {
+}
+.section2-left .text a {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: black;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: yellow underline 5px;
+}
+.section2-right img {
+    width: 100%;
+    height: 100%;
 }
