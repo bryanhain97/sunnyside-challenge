@@ -9,25 +9,33 @@ head {
 body {
     background: #ffffff;
 }
+.container {
+    min-width: 1000px;
+    width: 100%;
+    height: auto;
+}
 .section1 {
     background-image: url('./sunny-solution/Frontend-Mentor-Challenges-16/images/desktop/image-header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     display: flex;
-    height: 60vh;
+    height:80vh;
     flex-direction: column;
 }
 .section1 .navigation {
-    margin: 10px;
+    margin: 0 0.5rem;
+    height: 10vh;
     color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .section1 .navigation img {
     padding: 0.5rem;
 }
 .section1 .navigation ul {
+    width: 400px;
     display: flex;
     list-style: none;
 }
@@ -37,46 +45,73 @@ body {
     text-transform: uppercase;
     font-size: 0.9rem;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 1rem;
+    border-radius: 50px;
     transition: all 0.3s;
 }
 .section1 .navigation ul li:hover{
     background-color: white;
     color: black;
+    padding: 0 1rem;
     border-radius: 50px;
 }
 .section1 .title {
     text-transform: uppercase;
-    margin-top: 8%;
+    margin-top: 6%;
+    letter-spacing: 0.55rem;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 1.4rem;
     text-align: center;
     color: white;
 }
 .section1 .title img {
-    transform: scale(70%) translateY(40px);
-    transition: all 0.3s;
+    margin-top: 50px;
+    transform: scale(75%) translateY(75px);
+    animation: 1.2s slider ease-in-out infinite
+}
+@keyframes slider {
+    0% {
+        transform: scale(70%) translateY(0px)
+    }
+    50% {
+        transform: scale(70%) translateY(30px)
+    }
+    100% {
+        transform: scale(70%) translateY(0px)
+    }
 }
 .section2 {
     display: flex;
     width: 100%;
+    height: 50vh;
 }
 .section2-left, .section2-right {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50vw;
-    height: 35vh;
+}
+.section2-right {
+    background-image: url('./sunny-solution/Frontend-Mentor-Challenges-16/images/desktop/image-transform.jpg');
+    background-size: contain;
+    background-position: center center;
 }
 .section2-left .text{
-    width: 70%;
+    width: 65%;
 }
 .section2-left .text p {
     word-wrap: break-word;
     font-size: 1rem;
-    margin: 15px 0;
+    margin: 2rem 0 2rem 0;
 }
 .section2-left .text h2 {
+    font-size: 2rem;
+    position: relative;
+    top: -0.8rem;
 }
 .section2-left .text a {
+    align-self: flex-start;
     position: relative;
     top: 10px;
     left: 10px;
@@ -85,9 +120,55 @@ body {
     padding-top: 10px;
     font-weight: 700;
     font-size: 0.9rem;
-    text-decoration: yellow underline 5px;
+    text-decoration: 5px solid yellow underline;
 }
 .section2-right img {
     width: 100%;
     height: 100%;
+}
+.section3 {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+}
+.section3-left, .section3-right {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3-left {
+    background-image: url('./sunny-solution/Frontend-Mentor-Challenges-16/images/desktop/image-stand-out.jpg');
+    background-size: contain;
+    background-position: center center;
+}
+.section3-right .section3-text {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section3-right .section3-text-head {
+    font-size: 2rem;
+    position: relative;
+    top: -0.8rem;
+}
+.section3-right .section3-text-main {
+    word-wrap: break-word;
+    font-size: 1rem;
+    margin: 2rem 0 2rem 0;
+}
+.section3-right a {
+    position: relative;
+    align-self: flex-start;
+    top: 10px;
+    left: 10px;
+    color: black;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: 5px solid yellow underline;
 }

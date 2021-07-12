@@ -1,1 +1,1 @@
-let arrowDown = document.querySelector('.title>img')
+// for performance reasons, it's better to just use CSS for ARROW slide
